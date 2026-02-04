@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form</title>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<form>
+			<fieldset class="fieldest_group">
+				<h2 class="heading_group">Ваши личные данные</h2>
+				<label class="label_group">
+					<p class="title_input">Ваше имя</p>
+					<input
+						class="input_group"
+						type="text"
+						placeholder="Имя"
+						name="name"
+						inputmode="name"
+						required
+					/>
+				</label>
+				<label>
+					<p class="title_input">Ваш возраст</p>
+					<input
+						class="input_group"
+						type="number"
+						placeholder="Возраст"
+						name="number"
+						inputmode="name"
+						required
+					/>
+				</label>
+				<label>
+					<p class="title_input">Ваш номер телефона</p>
+					<input
+						class="input_group"
+						type="number"
+						placeholder="Номер телефона"
+						name="number"
+						inputmode="numeric"
+						required
+					/>
+				</label>
+				<label class="label_group">
+					<p class="title_input">Ваша почта</p>
+					<input
+						class="input_group"
+						type="email"
+						placeholder="Почта"
+						name="email"
+						inputmode="email"
+						required
+					/>
+				</label>
+				<label class="label_group">
+					<p class="title_input">Сообщение</p>
+					<textarea
+						class="textarea_group"
+						name="message"
+						placeholder="Ваше сообщение"
+						required
+					></textarea>
+				</label>
+				<label class="label_group">
+					<input type="checkbox" />
+					Я принимаю правила
+				</label>
+				<button class="button">Отправить</button>
+			</fieldset>
+		</form>
+	</body>
+</html>
