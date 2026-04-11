@@ -39,9 +39,9 @@ export default class BurgerMenu {
 		this.body.addEventListener('click', this.onBodyClick);
 
 		// // Touch events
-		// this.body.addEventListener('touchstart', this.handleTouchStart);
-		// this.body.addEventListener('touchmove', this.handleTouchMove);
-		// this.body.addEventListener('touchend', this.handleTouchEnd);
+		this.body.addEventListener('touchstart', this.handleTouchStart);
+		this.body.addEventListener('touchmove', this.handleTouchMove);
+		this.body.addEventListener('touchend', this.handleTouchEnd);
 	}
 
 	removeEvents() {
@@ -50,9 +50,9 @@ export default class BurgerMenu {
 		this.body.removeEventListener('click', this.onBodyClick);
 
 		// Touch events
-		// this.body.removeEventListener('touchstart', this.handleTouchStart);
-		// this.body.removeEventListener('touchmove', this.handleTouchMove);
-		// this.body.removeEventListener('touchend', this.handleTouchEnd);
+		this.body.removeEventListener('touchstart', this.handleTouchStart);
+		this.body.removeEventListener('touchmove', this.handleTouchMove);
+		this.body.removeEventListener('touchend', this.handleTouchEnd);
 	}
 
 	onWindowResize() {
@@ -126,9 +126,9 @@ export default class BurgerMenu {
 
 	// Touch events
 	handleTouchStart(event) {
-		// if (!this.isBurgerMenuOpen()) return;
-		// this.touchStartX = event.changedTouches[0].screenX;
-		// this.burgerMenu.style.transition = 'none';
+		if (!this.isBurgerMenuOpen()) return;
+		this.touchStartX = event.changedTouches[0].screenX;
+		this.burgerMenu.style.transition = 'none';
 	}
 
 	handleTouchMove(event) {
